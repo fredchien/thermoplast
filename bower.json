@@ -1,0 +1,18 @@
+{
+  "name": "thermoplast",
+  "description": "Novo site institucional Thermo Plast.",
+  "main": "index.html",
+  "authors": [
+    "Frederic Chien"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/fredchien/thermoplast",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ]
+}

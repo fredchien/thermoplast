@@ -1,0 +1,289 @@
+/******************** FONTS ********************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+/******************** VARS ********************/
+/******************** BASE ********************/
+* { outline: transparent; }
+
+html, body { color: #333333; min-width: 320px; font-family: "Roboto", sans-serif; font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Roboto", sans-serif; margin-bottom: 30px; margin-top: 0; font-weight: 800; }
+
+h1 { font-size: 60px; }
+
+h2 { font-size: 48px; }
+
+h3 { font-size: 36px; }
+
+h6 { font-size: 16px; }
+
+a { color: #333333; text-decoration: none !important; transition: color .2s ease-in-out, background .2s ease-in-out; }
+
+a:hover { color: #e03214; }
+
+p { line-height: 25px; font-family: "Roboto", sans-serif; font-weight: 300; }
+
+p:last-child { margin-bottom: 0; }
+
+section { padding: 30px 0; }
+
+::-webkit-input-placeholder { font: 14px verdana, arial, sans-serif; }
+
+:-moz-placeholder { font: 14px verdana, arial, sans-serif; }
+
+::-moz-placeholder { font: 14px verdana, arial, sans-serif; }
+
+:-ms-input-placeholder { font: 14px verdana, arial, sans-serif; }
+
+/******************** CLASSES ********************/
+.nopadding { padding: 0; }
+
+.row.rowflex { display: flex; }
+
+@media (min-width: 768px) { .row.rowflex-sm { display: flex; } }
+
+@media (min-width: 992px) { .row.rowflex-md { display: flex; } }
+
+@media (min-width: 1200px) { .row.rowflex-lg { display: flex; } }
+
+figure.fit { background-repeat: no-repeat; background-position: center center; background-size: cover; width: 100%; height: 0; padding-bottom: 100%; overflow: hidden; }
+
+.text-center { text-align: center; }
+
+.clear { clear: both; }
+
+.no-padding { padding: 0 !important; }
+
+.topo { background: #1b1b1b; padding: 5px; }
+
+.topo p { color: #fff; font-size: 13px; }
+
+.topo i { color: #fff; font-size: 20px; padding-right: 7px; }
+
+/******************** HEADER ********************/
+#header { background: #fff; position: fixed; top: 0; left: 0; right: 0; transition: background .6s ease-in-out; z-index: 3; }
+
+#header img { margin-right: 10px; }
+
+#header .navbar-brand { height: auto; padding: 23px 0; transition: padding .4s ease-in-out; }
+
+#header .navbar-brand img { width: 100%; transition: width .4s ease-in-out; }
+
+#header .dropdown-submenu { position: relative; }
+
+#header .nav > li > a:hover, #header .nav > li > a:focus { background: transparent; }
+
+#header .nav .open > a, #header .nav .open > a:hover, #header .nav .open > a:focus { background: transparent; }
+
+#header .navbar-header #menu-toggle { background: transparent; border: 0; width: 40px; height: 40px; position: absolute; top: 0; right: 15px; padding: 6px; margin: 15px 0; margin-left: 20px; outline: transparent !important; vertical-align: bottom; transition: margin .4s ease-in-out; }
+
+#header .navbar-header #menu-toggle .icon-bars { background: #111111; display: block; position: relative; height: 3px; transition: background .6s ease-in-out 0s; }
+
+#header .navbar-header #menu-toggle .icon-bars:before, #header .navbar-header #menu-toggle .icon-bars:after { content: ''; background: #111111; display: block; position: absolute; height: 3px; width: 100%; }
+
+#header .navbar-header #menu-toggle .icon-bars:before { top: -8px; transition-property: top, transform, background; transition-duration: .3s, .3s, .6s; transition-delay: .3s, 0s, 0s; transition-timing-function: ease-in-out, ease-in-out, ease-in-out; }
+
+#header .navbar-header #menu-toggle .icon-bars:after { bottom: -8px; transition-property: bottom, transform, background; transition-duration: .3s, .3s, .6s; transition-delay: .3s, 0s, 0s; transition-timing-function: ease-in-out, ease-in-out, ease-in-out; }
+
+#header #menu { float: right; position: relative; top: 35px; transition: 0.4s; }
+
+#header #menu ul { list-style: none; font-size: 16px; padding: 0; margin: 0; }
+
+#header #menu ul > li { transition: background .2s ease-in-out, color .2s ease-in-out; }
+
+#header #menu ul > li:first-of-type { margin-left: 0; }
+
+#header #menu ul > li > a { color: #333333; display: block; line-height: 30px; font-size: 13px; text-decoration: none !important; text-align: center; text-transform: uppercase; transition: color .2s ease-in-out, padding .4s ease-in-out; position: relative; }
+
+#header #menu ul > li > a:hover { color: #e03214; }
+
+#header #menu .logo { position: absolute; left: 585px; }
+
+#header #menu .logo img { width: 150px; }
+
+/******************** BANNER ********************/
+.top-banner { height: 100%; height: 100vh; background-attachment: fixed; }
+
+.top-banner:before { content: ''; background: rgba(0, 0, 0, 0.3); position: absolute; top: 0; width: 100%; height: 100%; transform-origin: top; }
+
+.top-banner .carrossel { position: relative; top: 350px; text-shadow: 2px 2px #000000; }
+
+.top-banner .carrossel p { color: #fff; text-align: center; font-size: 18px; }
+
+.top-banner .carrossel h2 { color: #fff; text-align: center; text-transform: uppercase; font-size: 70px; }
+
+.top-banner .carrossel .owl-dots { position: absolute; width: 100%; bottom: -140px; text-align: center; }
+
+.top-banner .carrossel .owl-dots .owl-dot { background: #fff; display: inline-block; width: 16px; height: 16px; border-radius: 50%; border: 2px solid #fff; margin-right: 12px; transition: background .2s ease-in-out; }
+
+.top-banner .carrossel .owl-dots .owl-dot.active { background: #bc0926; }
+
+.top-banner-page { height: 100%; height: 85vh; background-attachment: fixed; }
+
+.top-banner-page:before { content: ''; background: rgba(224, 50, 20, 0.6); position: absolute; top: 0; width: 100%; height: 100%; transform-origin: top; }
+
+/******************** SESS1 HOME ********************/
+.sessao-1-home { background: #fff; padding-top: 100px; padding-bottom: 100px; }
+
+.sessao-1-home figure.fit { background-size: auto; padding-bottom: 50%; }
+
+.sessao-1-home figcaption { text-align: center; }
+
+.sessao-1-home figcaption p { color: #666666; }
+
+.sessao-1-home figcaption h3 { font-size: 18px; margin-bottom: 15px; }
+
+/******************** SESS2 HOME ********************/
+.sessao-2-home { background: #f2f4f4; }
+
+.sessao-2-home h2 { color: #e03214; font-size: 30px; font-weight: 100; }
+
+.sessao-2-home .box-prod { background: #fff; padding-top: 50px; padding-bottom: 50px; }
+
+.sessao-2-home .box-prod figure.fit { background-size: auto; padding-bottom: 60%; }
+
+.sessao-2-home .box-prod figcaption { text-align: center; text-transform: uppercase; font-weight: 600; font-size: 25px; }
+
+/******************** CTA HOME ********************/
+.cta-home { text-align: left; position: relative; padding-top: 100px; padding-bottom: 100px; }
+
+.cta-home:before { content: ''; background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; width: 100%; height: 100%; transform-origin: top; }
+
+.cta-home h2 { color: #fff; font-size: 30px; font-weight: 300; }
+
+.cta-home p { color: #fff; font-size: 16px; }
+
+.cta-home .cta-button { background-color: #1b1b1b; text-transform: uppercase; color: #fff; font-weight: 300; font-size: 17px; padding: 10px 30px; display: inline-block; margin-top: 20px; transition: 0.5s; }
+
+.cta-home .cta-button:hover { background: #e03214; color: #fff; }
+
+/******************** MAPA HOME ********************/
+.mapa-home { padding: 0; }
+
+/******************** PRODUTOS ********************/
+.sessao-2-page { background: #f2f4f4; }
+
+.sessao-2-page figcaption { color: #1a1a1a; text-align: center; margin-top: 15px; margin-bottom: 50px; }
+
+.sessao-2-page .boxprod { background: #fff; padding: 100px; margin-bottom: 20px; }
+
+.sessao-2-page .boxprod figure.fit { background-size: auto; }
+
+/******************** SINGLE PRODUTOS ********************/
+.sessao-1-single h2 { font-size: 30px; margin-top: 30px; }
+
+.sessao-1-single h3 { font-size: 17px; }
+
+.sessao-1-single dl { display: flex; flex-wrap: wrap; }
+
+.sessao-1-single dl dt { padding: 10px 0; margin-bottom: 2px; border-bottom: 1px solid #ccc; font-weight: normal; width: 65%; }
+
+.sessao-1-single dl dd { padding: 10px 0; margin-bottom: 2px; border-bottom: 1px solid #ccc; font-weight: normal; width: 35%; }
+
+.sessao-1-single .cta-button { background-color: #1b1b1b; text-transform: uppercase; color: #fff; font-weight: 300; font-size: 17px; padding: 10px 30px; display: inline-block; margin-top: 20px; transition: 0.5s; }
+
+.sessao-1-single .cta-button:hover { background: #e03214; color: #fff; }
+
+.cta-button { background-color: #1b1b1b; text-transform: uppercase; color: #fff; font-weight: 300; font-size: 17px; padding: 10px 30px; display: inline-block; margin-top: 20px; transition: 0.5s; }
+
+.cta-button:hover { background: #e03214; color: #fff; }
+
+.sessao-2-single { background: #f2f4f4; }
+
+.sessao-2-single h2 { font-size: 20px; }
+
+.sessao-2-single figcaption { color: #1a1a1a; text-align: center; margin-top: 15px; margin-bottom: 50px; }
+
+.sessao-2-single .boxprod { background: #fff; padding: 100px; margin-bottom: 20px; }
+
+.sessao-2-single .boxprod figure.fit { background-size: auto; }
+
+/******************** SOBRE ********************/
+.sessao-1-sobre h2 { font-size: 30px; margin-top: 30px; }
+
+.sessao-1-sobre h3 { font-size: 17px; }
+
+.sessao-1-sobre .video-wrapper { position: relative; margin-top: 30px; width: 100%; height: 0; padding-bottom: 50.25%; }
+
+.sessao-1-sobre .video-wrapper video { background: #000; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.sessao-1-sobre .video-wrapper .video-overlay { background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; opacity: 1; visibility: visible; transition: opacity .2s ease-in-out, visibility 0s linear 0s; cursor: pointer; }
+
+.sessao-1-sobre .video-wrapper .video-overlay > span { color: #fff; background: #000; width: 94px; height: 94px; padding-left: 6px; border-radius: 50%; line-height: 94px; text-align: center; font-size: 26px; }
+
+.sessao-1-sobre .video-wrapper .video-overlay.playing { opacity: 0; visibility: hidden; transition: opacity .2s ease-in-out, visibility 0s linear .2s; }
+
+.sessao-2-sobre { background: #eeeeee; padding: 50px; }
+
+.sessao-2-sobre figure.fit { background-size: auto; padding-bottom: 35%; }
+
+.sessao-2-sobre figcaption { text-align: center; color: #666666; }
+
+.sessao-2-sobre figcaption h3 { font-size: 25px; text-align: center; color: #1a1a1a; }
+
+/******************** SOBRE ********************/
+.sessao-1-contato h2 { font-size: 30px; margin-top: 30px; }
+
+.sessao-1-contato h3 { font-size: 17px; }
+
+.sessao-1-contato ul { margin: 0; }
+
+.sessao-1-contato ul li { margin-bottom: 20px; }
+
+.sessao-1-contato ul li img { margin-right: 10px; }
+
+form input, form textarea { border-radius: 0px !important; }
+
+/******************** FOOTER ********************/
+footer { padding-top: 50px; padding-bottom: 30px; font-size: 13px; background: #111111; border-top: solid 5px #e03214; color: #fff; }
+
+footer a { color: #fff; font-size: 45px; margin-left: 5px; }
+
+footer li { margin-bottom: 10px; }
+
+footer li img { margin-right: 10px; }
+
+@media (min-width: 768px) { #header.top-fixed { box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1); background: #fff; border-bottom: none; }
+  #header.top-fixed .navbar-brand { padding: 15px 0; }
+  #header.top-fixed .navbar-brand img { width: 200px; }
+  #header.top-fixed #menu { top: 10px; }
+  #header.top-fixed a:hover { color: #e03214 !important; } }
+
+#header.open .navbar-header #menu-toggle .icon-bars { background: transparent !important; }
+
+#header.open .navbar-header #menu-toggle .icon-bars:before { top: 0; transform: rotate(45deg); transition-delay: 0s, .3s; }
+
+#header.open .navbar-header #menu-toggle .icon-bars:after { bottom: 0; transform: rotate(-45deg); transition-delay: 0s, .3s; }
+
+/******************** RESPONSIVO ********************/
+@media (max-width: 767px) { .top-banner .carrossel { top: 150px; }
+  /***** BASE *****/
+  body { padding-top: 70px; }
+  h1 { font-size: 42px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 28px; }
+  h6 { font-size: 16px; }
+  /***** HEADER *****/
+  #header { box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1); background: #fff; }
+  #header .navbar-brand { padding: 0 0; margin-left: 15px; }
+  #header .navbar-brand img { height: 70px; width: 60%; padding: 10px; }
+  #header #menu { background: #fff; border-top: solid 5px #111111; float: none; position: fixed; top: 70px; left: 100%; bottom: 0; width: 100%; transition: left .6s ease-in-out, top .4s ease-in-out; display: flex; align-items: center; justify-content: center; }
+  #header #menu ul { width: 100%; padding: 0; }
+  #header #menu ul > li { float: none; margin: 0; }
+  #header #menu ul > li:nth-child(5) { margin-right: 0; }
+  #header #menu ul > li > a { padding: 8px 15px; margin-bottom: 2px; margin-left: 0; }
+  #header #menu ul > li > a:after { content: none; }
+  #header #menu ul > li > a:before { content: ''; display: block; position: absolute; top: 50%; left: 0; height: 20px; border-left: 14px solid #fff; transform: translateY(-50%); }
+  #header #menu ul > li:last-child > a { margin-bottom: 0; }
+  #header.open #menu { left: 0%; } }
+
+@media (min-width: 768px) and (max-width: 991px) { /***** HEADER *****/
+  #header .navbar-brand { padding: 25px 0; }
+  #header #menu { float: none; display: inline-block; top: 0; }
+  #header #menu ul { font-size: 14px; }
+  #header #menu ul > li > a { padding: 28px 12px; } }
+
+@media (min-width: 768px) and (max-width: 1200px) { #header #menu ul > li > a { padding: 28px 3px; }
+  #header #menu ul > li > a { font-size: 12px; }
+  #header #menu .logo { position: absolute; left: 0px; bottom: -20px; } }
+
+/*# sourceMappingURL=style.css.map */
